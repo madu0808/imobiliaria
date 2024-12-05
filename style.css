@@ -1,0 +1,379 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #cc00ff;
+    color: #333333;
+    line-height: 10;
+    padding-top: 100px; /* Para evitar que o conteúdo fique escondido por conta do cabeçalho fixo */
+  }
+
+/* Cabeçalho */
+header {
+    background-color: #333;
+    color: rgb(132, 0, 255);
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 340px;
+}
+
+header .logo h1 {
+    font-size: 32px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color:black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Seção Hero */
+.hero {
+    background: url('https://via.placeholder.com/1600x600') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 20px;
+}
+
+/* Seção de Propriedades */
+.properties {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.properties h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* Centralizando as imagens e os cards de propriedade */
+.property-list {
+    display: flex;
+    justify-content: center;  /* Centraliza horizontalmente */
+    gap: 30px;
+    flex-wrap: wrap;  /* Permite que os itens se movam para a linha seguinte */
+    margin-top: 30px;
+}
+
+.property-card {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    margin: 20px 0;  /* Adicionando margem para espaçamento entre os cards */
+}
+
+.property-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;  /* Centraliza a imagem dentro do card */
+}
+
+.property-card h3 {
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+.property-card p {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.property-card button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.property-card button:hover {
+    background-color: #555;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+#quem-somos {
+    background-color: #ffffff;
+    padding: 60px 0;
+    color: #333;
+}
+
+#quem-somos .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#quem-somos h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #1e2a3a;
+}
+
+#quem-somos h3 {
+    font-size: 28px;
+    margin-top: 40px;
+    color: #1e2a3a;
+}
+
+#quem-somos p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+#quem-somos ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+#quem-somos ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+#quem-somos strong {
+    color: #1e2a3a;
+}
+
+@media (max-width: 768px) {
+    #quem-somos h2 {
+        font-size: 30px;
+    }
+    #quem-somos h3 {
+        font-size: 24px;
+    }
+    #quem-somos p {
+        font-size: 16px;
+    }
+    #quem-somos ul li {
+        font-size: 16px;
+    }
+}
+/* Container do Login */
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Link para esqueci a senha */
+.forgot-password {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.forgot-password a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé do login */
+.login-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-footer a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Acompanhamento de Processos */
+.process-tracking {
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    max-width: 400px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.process-tracking h3 {
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.process-tracking ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.process-tracking ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.process-tracking ul li a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.process-tracking ul li a:hover {
+    text-decoration: underline;
+}
+/* Container da Galeria */
+.gallery-container {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 1000px;
+    font-family: Arial, sans-serif;
+}
+
+/* Títulos */
+h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Galeria de Imagens */
+.image-gallery {
+    margin-bottom: 450px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    justify-items: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    .video-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+}
